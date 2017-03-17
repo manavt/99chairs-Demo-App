@@ -1,0 +1,11 @@
+<%= form_for([@user], url: {controller: "csv_processsors", action: "create", method: "post"}) do |f| %>
+<table>
+  <tr>
+    <th><%= f.label :value%></th>
+    <th><%= f.file_field :value%></th>
+  </tr>
+  <tr>
+    <th><%= submit_tag "Upload"%></th>
+  </tr>
+</table>
+<%end%>

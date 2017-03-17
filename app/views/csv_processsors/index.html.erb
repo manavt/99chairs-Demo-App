@@ -1,0 +1,14 @@
+<table>
+  <tr>
+    <th>First Name</th>
+    <th>Count</th>
+    <tr>
+      <tr>
+        <% @user.each do |user| %>
+        <td><%= user.first_name  %></td>
+        <td><%= user.count %></td>
+        <%end%>
+      </tr>
+</table>
+
+<%= link_to "Upload new file", new_csv_processsor_path%>
